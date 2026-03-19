@@ -1,0 +1,78 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.main {
+  width: 95%;
+  max-width: 420px;
+  text-align: center;
+}
+
+.progress {
+  font-size: 18px;
+  color: #ff69b4;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.step {
+  display: none;
+  animation: fadeIn 0.8s;
+}
+
+.step.active {
+  display: block;
+}
+
+img {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.7);
+  margin: 15px 0;
+}
+
+.msg {
+  font-size: 22px;
+  line-height: 1.5;
+  margin: 20px 0;
+}
+
+.big { font-size: 26px; color: #ffd700; }
+
+button {
+  background: #ff3366;
+  color: white;
+  border: none;
+  padding: 18px 50px;
+  font-size: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 25px 0;
+  width: 80%;
+  touch-action: manipulation;
+}
+
+button:active { transform: scale(0.95); }
+
+.canva-box { margin: 25px 0; }
+
+.end-msg { font-size: 20px; margin-top: 20px; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile perfect */
+@media (max-width: 480px) {
+  button { padding: 20px; font-size: 22px; }
+}
